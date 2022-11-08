@@ -1,16 +1,24 @@
 import { useRef, useState } from "react";
-import cImg1 from "../assets/images/01.png";
-import cImg2 from "../assets/images/02.png";
-import cImg3 from "../assets/images/03.png";
 
-import gImg1 from "../assets/images/a.png";
-import gImg2 from "../assets/images/b.png";
-import gImg3 from "../assets/images/c.png";
+import ivEvo from "../assets/images/evoluzione-ivory.png";
+import slEvo from "../assets/images/evoluzione-slate.png";
+import blEvo from "../assets/images/evoluzione-black.png";
+import ivEvoI from "../assets/images/evoluzione-ivory-icon.png"
+import slEvoI from "../assets/images/evoluzione-slate-icon.png"
+import blEvoI from "../assets/images/evoluzione-black-icon.png"
 
-import hImg1 from "../assets/images/h1.png";
-import hImg2 from "../assets/images/h2.png";
-import hImg3 from "../assets/images/h3.png";
-
+import onEvo from "../assets/images/evoluzione-onyx.png";
+import chEvo from "../assets/images/evoluzione-charcoal.png";
+import buEvo from "../assets/images/evoluzione-blue.png";
+import onEvoI from "../assets/images/evoluzione-onyx-icon.png";
+import chEvoI from "../assets/images/evoluzione-charcoal-icon.png";
+import buEvoI from "../assets/images/evoluzione-blue-icon.png";
+/*
+import blXL from "../assets/images/xl-black.png";
+import buXL from "../assets/images/xl-blue.png";
+import blXLI from "../assets/images/xl-black-icon.png";
+import buXLI from "../assets/images/xl-blue-icon.png";
+*/
 import Slide from "./Slide";
 
 import { BiAccessibility, BiAperture, BiAward } from "react-icons/bi";
@@ -19,18 +27,18 @@ export default function Slider() {
   const [serises, setSerises] = useState([
     {
       id: 1,
-      title: "Evoluzine",
+      title: "Evoluzione",
       link: "/",
       products: [
         {
           id: 1,
-          img: cImg1,
+          img: ivEvo,
           link: "/",
-          text: "turismo Racing",
-          color: "orange",
-          catagori: "Wood Chair",
+          text: "Turismo Racing",
+          color: "Ivory Grey",
+          catagori: "Gaming Chair",
           title: "Evoluzione",
-          btnImg: cImg1,
+          btnImg: ivEvoI,
           featured: [
             {
               id: 1,
@@ -51,13 +59,13 @@ export default function Slider() {
         },
         {
           id: 2,
-          img: cImg2,
+          img: slEvo,
           link: "/",
-          text: "turismo Chair",
-          color: "Red",
-          catagori: "Wood Chair",
+          text: "Turismo Racing",
+          color: "Slate Grey",
+          catagori: "Gaming Chair",
           title: "Evoluzione",
-          btnImg: cImg2,
+          btnImg: slEvoI,
           featured: [
             {
               id: 1,
@@ -78,90 +86,80 @@ export default function Slider() {
         },
         {
           id: 3,
-          img: cImg3,
+          img: blEvo,
           link: "/",
-          text: "turismo grey",
-          color: "slate grey",
-          catagori: "Wood Chair",
+          text: "Turismo Racing",
+          color: "Black",
+          catagori: "Gaming Chair",
           title: "Evoluzione",
-          btnImg: cImg3,
+          btnImg: blEvoI,
         },
       ],
     },
     {
       id: 2,
-      title: "Evoluzine Icon",
+      title: "Evoluzione Icon",
       link: "/",
       products: [
         {
           id: 1,
-          img: gImg1,
+          img: onEvo,
           link: "/",
-          text: "turismo Racing",
-          color: "slate grey",
+          text: "Turismo Racing",
+          color: "Onyx Black",
           catagori: "Gaming Chair",
           title: "Evoluzione Icon",
-          btnImg: gImg1,
+          btnImg: onEvoI,
         },
         {
           id: 2,
-          img: gImg2,
+          img: chEvo,
           link: "/",
-          text: "turismo Racing",
-          color: "slate grey",
+          text: "Turismo Racing",
+          color: "Charcoal Black ",
           catagori: "Gaming Chair",
           title: "Evoluzione Icon",
-          btnImg: gImg2,
+          btnImg: chEvoI,
         },
         {
           id: 3,
-          img: gImg3,
+          img: buEvo,
           link: "/",
-          text: "turismo Racing",
-          color: "slate grey",
+          text: "Turismo Racing",
+          color: "Blue Black",
           catagori: "Gaming Chair",
-          title: "Evoluzione",
-          btnImg: gImg3,
+          title: "Evoluzione Icon",
+          btnImg: buEvoI,
         },
       ],
     },
-    {
+    /*{
       id: 3,
-      title: "Evoluzine xl",
+      title: "Evoluzine XL",
       link: "/",
       products: [
         {
           id: 1,
-          img: hImg1,
+          img: blXL,
           link: "/",
-          text: "turismo Racing",
-          color: "slate grey",
+          text: "Turismo Racing",
+          color: "Black",
           catagori: "Gaming Chair",
-          title: "Evoluzione",
-          btnImg: hImg1,
+          title: "Evoluzione XL",
+          btnImg: blXLI,
         },
         {
           id: 2,
-          img: hImg2,
+          img: buXL,
           link: "/",
-          text: "turismo Racing",
-          color: "slate grey",
+          text: "Turismo Racing",
+          color: "Blu",
           catagori: "Gaming Chair",
-          title: "Evoluzione xl",
-          btnImg: hImg2,
-        },
-        {
-          id: 3,
-          img: hImg3,
-          link: "/",
-          text: "turismo Racing",
-          color: "slate grey",
-          catagori: "Gaming Chair",
-          title: "Evoluzione xl",
-          btnImg: hImg3,
+          title: "Evoluzione XL",
+          btnImg: blXLI,
         },
       ],
-    },
+    },*/
   ]);
 
   const ref = useRef();
@@ -184,7 +182,7 @@ export default function Slider() {
               }`}
             >
               <h2>{serise.title}</h2>
-              <p>serise</p>
+              <p>series</p>
             </li>
           ))}
         </ul>

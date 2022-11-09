@@ -123,21 +123,29 @@ body {
     width: 100%;
     text-align: center;
     height: 100%;
+    //border: 1px solid yellow;
 
     & > a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       height: 100%;
+      //border: 1px solid white;
     }
 
     &-img {
       height: calc(100% - 450px);
       z-index: 9;
-      min-height: 400px;
+      min-height: 530px;
       max-width: 100%;
       object-fit: contain;
-      padding-bottom: 20px;
+      //border: 1px solid red;
+      transition: 0.3s all;
+      margin-bottom: 150px;
+      
+      &:hover {
+        transform: scale(1.059);
+      }
     }
 
     .watermark {
@@ -154,6 +162,7 @@ body {
       opacity: 0.5;
       z-index: 1;
       cursor: default;
+      //border: 1px solid orange;
 
       @media screen and (max-width: $lg) {
         font-size: 100px;

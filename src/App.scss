@@ -31,7 +31,7 @@ body {
   height: 100vh;
   min-height: 850px;
   background-image: url(./assets/images/background-image.png);
-  background-position: center bottom;
+  background-size: contain;
   position: relative;
   z-index: 1;
   overflow: hidden;

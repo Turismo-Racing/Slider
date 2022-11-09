@@ -13,12 +13,12 @@ import buEvo from "../assets/images/evoluzione-blue.png";
 import onEvoI from "../assets/images/evoluzione-onyx-icon.png";
 import chEvoI from "../assets/images/evoluzione-charcoal-icon.png";
 import buEvoI from "../assets/images/evoluzione-blue-icon.png";
-/*
+
 import blXL from "../assets/images/xl-black.png";
 import buXL from "../assets/images/xl-blue.png";
 import blXLI from "../assets/images/xl-black-icon.png";
 import buXLI from "../assets/images/xl-blue-icon.png";
-*/
+
 import Slide from "./Slide";
 
 import { BiAccessibility, BiAperture, BiAward } from "react-icons/bi";
@@ -133,9 +133,9 @@ export default function Slider() {
         },
       ],
     },
-    /*{
+    {
       id: 3,
-      title: "Evoluzine XL",
+      title: "Evoluzione XL",
       link: "/",
       products: [
         {
@@ -153,13 +153,13 @@ export default function Slider() {
           img: buXL,
           link: "/",
           text: "Turismo Racing",
-          color: "Blu",
+          color: "Blue",
           catagori: "Gaming Chair",
           title: "Evoluzione XL",
-          btnImg: blXLI,
+          btnImg: buXLI,
         },
       ],
-    },*/
+    },
   ]);
 
   const ref = useRef();
